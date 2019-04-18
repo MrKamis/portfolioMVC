@@ -9,15 +9,15 @@
          * @return void
          */
         protected function loadModel() {
-            require_once __DIR__ . '\..\models/' . $_GET['page'] . 'Model.class.php';
+            require_once __DIR__ . '/../models/' . $_GET['page'] . 'Model.class.php';
         }
         /**
          * Loads view and shows it
          * @param Model $data
          * @return void
          */
-        protected function loadView(\Model $model) {
-            require_once __DIR__ . '\..\views/' . $_GET['page'] . 'View.phtml';
+        protected function loadView($model) {
+            require_once __DIR__ . '/../views/' . $_GET['page'] . 'View.phtml';
         }
     }
 ?>

@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__ . '\controller.class.php';
+    require_once __DIR__ . '/controller.class.php';
     class HomeController extends Controller {
         public function __construct() {
             $this->loadModel();
