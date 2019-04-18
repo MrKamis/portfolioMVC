@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 300ms;
+}
+.navigationBar {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #eee;
+  color: #333;
+  position: fixed;
+  z-index: 100;
+}
+.navigationBar .band {
+  padding-left: 10px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 120%;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+.navigationBar .band:hover {
+  text-shadow: 1px 1px #999;
+}
+.navigationBar ul.menu {
+  float: right;
+}
+.navigationBar ul.menu a li {
+  list-style: none;
+  padding: 0 10px 0 10px;
+  color: #444;
+  float: left;
+  cursor: pointer;
+}
+.navigationBar ul.menu a li:hover {
+  color: #004;
+}
+.navigationBar .mobile.menu {
+  display: none;
+}
+@media screen and (max-width: 678px) {
+  .navigationBar .mobile.menu {
+    display: inline-block;
+    float: right;
+    font-size: 160%;
+    padding: 0 10px 0 10px;
+  }
+  .navigationBar .mobile.menu:hover {
+    cursor: pointer;
+    color: #999;
+  }
+  .navigationBar ul.menu {
+    display: none;
+    width: 100%;
+    opacity: 0;
+  }
+  .navigationBar ul.menu li {
+    display: block;
+    background-color: #ddd;
+    width: 100%;
+  }
+}
+.navigationHelper {
+  width: 100%;
+  height: 70px;
+}
+.blockCenter {
+  width: 80%;
+  margin: 5px 10% 0 10%;
+  color: #333;
+}
+@media screen and (max-width: 678px) {
+  .blockCenter {
+    width: 98%;
+    margin: 1%;
+  }
+}
+#img1,
+#img2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 678px) {
+  #img1,
+  #img2 {
+    width: 70%;
+  }
+}
+.imgHelper {
+  width: 100%;
+  height: 360px;
+}
+@media screen and (max-width: 678px) {
+  .imgHelper {
+    height: 200px;
+  }
+}
+.textCenter {
+  text-align: center;
+}
+.bigPadding {
+  padding: 10%;
+}
+.footer {
+  width: 100%;
+  height: 220px;
+  background-color: #333;
+  color: #999;
+  text-align: center;
+  padding: 10px;
+}
+.footer form {
+  color: #eee;
+}
+.footer form label input {
+  padding: 5px;
+  display: inline-block;
+}
+.footer form label textarea {
+  padding: 5px;
+}
+.footer form input,
+.footer form textarea {
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+}
+.footer form input[type=submit] {
+  padding: 5px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.ok,
+.error {
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+.ok {
+  color: #00ff00;
+}
+.error {
+  color: #ff0000;
+}

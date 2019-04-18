@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 300ms;
+}
+.navigationBar {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #eee;
+    color: #333;
+    position: fixed;
+    z-index: 100;
+    .band {
+        padding-left: 10px;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 120%;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        color: #333;
+        &:hover {
+            text-shadow: 1px 1px #999;
+        }
+    }
+    ul.menu {
+        float: right;
+        a li {
+            list-style: none;
+            padding: 0 10px 0 10px;
+            color: #444;
+            float: left;
+            cursor: pointer;
+            &:hover {
+                color: #004;
+            }
+        }
+    }
+    .mobile.menu {
+        display: none;
+    }
+    @media screen and (max-width: 678px){
+        .mobile.menu {
+            display: inline-block;
+            float: right;
+            font-size: 160%;
+            padding: 0 10px 0 10px;
+            &:hover {
+                cursor: pointer;
+                color: #999;
+            }
+        }
+        ul.menu {
+            display: none;
+            width: 100%;
+            opacity: 0;
+            li {
+                display: block;
+                background-color: #ddd;
+                width: 100%;
+            }
+        }
+    }
+}
+.navigationHelper {
+    width: 100%;
+    height: 70px;
+}
+.blockCenter {
+    width: 80%;
+    margin: 5px 10% 0 10%;
+    color: #333;
+    @media screen and (max-width: 678px){
+        width: 98%;
+        margin: 1%;
+    }
+}
+#img1, #img2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @media screen and (max-width: 678px){
+        width: 70%;
+    }
+}
+.imgHelper {
+    width: 100%;
+    height: 360px;
+    @media screen and (max-width: 678px){
+        height: 200px;
+    }
+}
+.textCenter {
+    text-align: center;
+}
+.bigPadding {
+    padding: 10%;
+}
+.footer {
+    width: 100%;
+    height: 220px;
+    background-color: #333;
+    color: #999;
+    text-align: center;
+    padding: 10px;
+    form {
+        color: #eee;
+        label input {
+            padding: 5px;
+            display: inline-block;
+        }
+        label textarea {
+            padding: 5px;
+        }
+        input, textarea {
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+        }
+        input[type=submit] {
+            padding: 5px;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+.ok, .error {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.ok {
+    color: rgba(0, 255, 0, 100);
+}
+.error {
+    color: rgba(255, 0, 0, 100);
+}

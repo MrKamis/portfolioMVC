@@ -1,0 +1,5 @@
+Options FollowSymLinks
+RewriteEngine on
+RewriteRule ^home$ \index.php?page=home [L]
+RewriteRule ^o_mnie$ \index.php?page=about [L]
+RewriteRule ^send$ \index.php?page=send [L]

@@ -1,0 +1,44 @@
+@keyframes img1 {
+  0%,
+  100% {
+    left: 50%;
+    transform: translateX(-50%) scale(0.9) translateZ(400%);
+    z-index: 1;
+  }
+  25% {
+    transform: translateX(-70%) scale(0.85);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.8);
+    z-index: 0;
+  }
+  75% {
+    transform: translateX(-30%) scale(0.85);
+  }
+}
+.animation1 {
+  transform: perspective(300);
+  animation: img1 5s linear infinite;
+}
+@keyframes img2 {
+  0%,
+  100% {
+    left: 50%;
+    transform: translateX(-50%) scale(0.6);
+    z-index: 0;
+  }
+  25% {
+    transform: translateX(-30%) scale(0.8);
+  }
+  50% {
+    transform: translateX(-50%) scale(1);
+    z-index: 1;
+  }
+  75% {
+    transform: translateX(-70%) scale(0.65);
+  }
+}
+.animation2 {
+  transform: perspective(300);
+  animation: img2 5s linear infinite;
+}

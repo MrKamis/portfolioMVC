@@ -1,0 +1,11 @@
+<?php require_once __DIR__ . '\..\helpers/basicTopBar.htm'; ?>
+
+<?php
+    if ($model->state) {
+        echo '<div class="ok">Poprawnie wysłano wiadomość!</div>';
+    } else {
+        echo '<div class="error">Wystąpił błąd!</div>';
+    }
+?>
+
+<?php require_once __DIR__ . '\..\helpers/basicFooter.htm'; ?>
