@@ -29,7 +29,7 @@
                     require_once __DIR__ . '\..\controllers/sendController.class.php';
                     $controller = new SendController();
                     break;
-                default
+                default:
                     require_once __DIR__ . '\..\controllers/homeController.class.php';
                     $controller = new HomeController();
                     break;
